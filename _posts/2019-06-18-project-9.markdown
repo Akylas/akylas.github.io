@@ -1,0 +1,14 @@
+---
+title: eCairn
+subtitle: Android / iOS Application
+layout: default
+modal-id: 9
+date: 2019-06-18
+thumbnail: ecairn/map_icon_selected.png
+# alt: image-alt
+project-date: June 2019
+client: Nativescript
+category: Application Development
+description:  
+
+---
