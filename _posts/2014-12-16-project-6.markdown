@@ -3,7 +3,7 @@ title: Suggest A Move Application
 subtitle: iOS / Android Application
 layout: default
 modal-id: 6
-date: 2014-12-18
+date: 2014-12-16
 thumbnail: suggestamove/iTunesArtwork2.png
 img: suggestamove/screen322x572-1.jpeg
 # alt: image-alt
