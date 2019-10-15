@@ -1,10 +1,10 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Babolat Serial Player Wanted
+subtitle: Android / iOS Application
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: dreams.png
+img: babolat/slider_spw.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
 project-date: April 2014
