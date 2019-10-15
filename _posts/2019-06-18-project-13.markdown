@@ -3,13 +3,14 @@ title: Oenoneo
 subtitle: Android / iOS Applications
 layout: default
 modal-id: 10
-date: 2016-01-18
-thumbnail: opticities/Screen Shot 2019-10-15 at 15.21.36.png
-img: opticities/Screen Shot 2019-10-15 at 15.21.43.png
+date: 2017-01-18
+thumbnail: oenoneo/logo.png
+# img: oenoneo/Screen Shot 2019-10-15 at 15.21.43.png
 # alt: image-alt
-project-date: January 2016
+project-date: January 2017
 client: Titanium Mobile
 category: Application Development
 description:  
 
 ---
+a
