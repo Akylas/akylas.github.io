@@ -1,8 +1,8 @@
 ---
-title: Alpi Maps
-subtitle: Android / iOS Application
+title: Aryballe
+subtitle: Android / iOS / Desktop Application
 layout: default
-modal-id: 7
+modal-id: 8
 date: 2018-06-18
 img: alpimaps/banner.png
 thumbnail: alpimaps/Simulator-Screen-Shot-6-nov.-2015-10.06.34.png
