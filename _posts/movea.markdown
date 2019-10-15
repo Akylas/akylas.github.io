@@ -1,0 +1,15 @@
+---
+title: Movea Penny Demo
+subtitle: Android Application
+layout: default
+modal-id: 2
+date: 2012-12-18
+img: movea/slider_penny-1170x650.jpg
+# thumbnail: dreams-thumbnail.png
+# alt: image-alt
+project-date: December 2012
+client: Titanium Mobile
+category: Application Development
+description:  
+
+---
