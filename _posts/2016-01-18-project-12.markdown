@@ -4,7 +4,7 @@ subtitle: Android Applications
 layout: default
 modal-id: 12
 date: 2016-01-18
-thumbnail: opticities/Screen Shot 2019-10-15 at 15.21.36.png
+thumbnail: opticities/LogoVEDECOM-def-RVBcoulWeb.jpg
 img: opticities/Screen Shot 2019-10-15 at 15.21.43.png
 # alt: image-alt
 project-date: January 2016
