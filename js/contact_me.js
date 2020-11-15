@@ -21,7 +21,7 @@ $(function() {
                     .join(" ");
             }
             $.ajax({
-                url: "https://formspree.io/martin@akylas.fr",
+                url: "https://formspree.io/martin.guillon@akylas.fr",
                 method: "POST",
                 data: {
                     name: name,
