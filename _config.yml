@@ -1,34 +1,25 @@
-url: https://akylas.github.io
-baseurl: ""
-# Site settings
-title: Akylasfr
-email: martin@akylas.fr
-description: "Mobile apps developer and Open Source contributor"
-
-
-# Team names, titles and social links
+url: 'https://akylas.github.io'
+baseurl: ''
+title: Akylas
+email: contact@akylas.fr
+description: Mobile apps developer and Open Source contributor
 people:
-- name: Martin Guillon
-  pic: 2
-  position: Founder / Developer
-  social:
-    - title: linkedin
-      url: https://www.linkedin.com/in/martinguillon/
-    - title: github
-      url: http://github.com/farfromrefug
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+  - name: Martin Guillon
+    pic: 2
+    position: Founder / Developer
+    social:
+      - title: linkedin
+        url: 'https://www.linkedin.com/in/martinguillon/'
+      - title: github
+        url: 'http://github.com/farfromrefug'
 social:
-  - title: bitbucket 
-    url: http://bitbucket.org/farfromrefug
+  - title: bitbucket
+    url: 'http://bitbucket.org/farfromrefug'
   - title: github
-    url: http://github.com/farfromrefug
-
-# Postal address (add as many lines as necessary)
+    url: 'http://github.com/farfromrefug'
 address:
-  - line: 16 Grande Rue
   - line: 38000 Grenoble
-
-# Build settings
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-admin
