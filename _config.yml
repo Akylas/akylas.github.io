@@ -18,7 +18,7 @@ social:
   - title: github
     url: 'http://github.com/farfromrefug'
 address:
-  - line: 38000 Grenoble
+  - line: Grenoble France
 markdown: kramdown
 permalink: pretty
 plugins:
