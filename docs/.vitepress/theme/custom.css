@@ -1,0 +1,155 @@
+/**
+ * Custom theme styles for Akylas portfolio
+ * Maintains the original blue color scheme (#42C0ED)
+ */
+
+:root {
+  /* Brand Colors - Based on original theme */
+  --vp-c-brand-1: #42C0ED;
+  --vp-c-brand-2: #16afe6;
+  --vp-c-brand-3: #42C0ED;
+  --vp-c-brand-soft: rgba(66, 192, 237, 0.14);
+  
+  /* Custom colors from original theme */
+  --akylas-primary: #42C0ED;
+  --akylas-secondary: #16afe6;
+  --akylas-dark: #333;
+  --akylas-muted: #777;
+  
+  /* Typography */
+  --vp-font-family-base: 'Droid Serif', 'Roboto Slab', Georgia, serif;
+  --vp-font-family-mono: 'Monaco', 'Courier New', monospace;
+}
+
+/* Hero section customization */
+.VPHero .name {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.VPHero .tagline {
+  color: var(--akylas-muted);
+}
+
+/* Link colors */
+.vp-doc a {
+  color: var(--akylas-primary);
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  color: var(--akylas-secondary);
+  text-decoration: underline;
+}
+
+/* Button styles */
+.VPButton.brand {
+  background-color: var(--akylas-primary);
+  border-color: var(--akylas-primary);
+}
+
+.VPButton.brand:hover {
+  background-color: var(--akylas-secondary);
+  border-color: var(--akylas-secondary);
+}
+
+/* Portfolio Grid Styles */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.portfolio-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  background: var(--vp-c-bg-soft);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(66, 192, 237, 0.15);
+  border-color: var(--akylas-primary);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.portfolio-card h3 {
+  margin: 0.5rem 0;
+  color: var(--vp-c-text-1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio-card p {
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.portfolio-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--akylas-primary);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* GitHub Stats Styles */
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-card .stat-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--akylas-primary);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stat-card .stat-label {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  margin-top: 0.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .github-stats {
+    grid-template-columns: 1fr;
+  }
+}
