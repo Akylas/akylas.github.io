@@ -19,6 +19,9 @@ export interface PortfolioProject {
   stores?: {
     ios?: string
     android?: string
+    github?: string
+    fdroid?: string
+    izzyondroid?: string
   }
 }
 
@@ -41,7 +44,10 @@ export const projects: PortfolioProject[] = [
     },
     stores: {
       ios: 'https://apps.apple.com/app/oss-document-scanner/id1563961977',
-      android: 'https://play.google.com/store/apps/details?id=com.akylas.documentscanner'
+      android: 'https://play.google.com/store/apps/details?id=com.akylas.documentscanner',
+      github: 'https://github.com/Akylas/OSS-DocumentScanner/releases',
+      fdroid: 'https://f-droid.org/packages/com.akylas.documentscanner/',
+      izzyondroid: 'https://apt.izzysoft.de/fdroid/index/apk/com.akylas.documentscanner'
     }
   },
   {

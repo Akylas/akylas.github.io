@@ -22,9 +22,40 @@
 }
 
 /* Hero section customization - more modern look */
+.VPHero {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at top, rgba(66, 192, 237, 0.15), transparent 50%),
+              radial-gradient(ellipse at bottom, rgba(22, 175, 230, 0.1), transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.VPHero .container {
+  position: relative;
+  z-index: 1;
+}
+
 .VPHero .name {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: linear-gradient(135deg, var(--akylas-primary), var(--akylas-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800 !important;
+}
+
+.VPHero .text {
+  background: linear-gradient(135deg, var(--vp-c-text-1), var(--vp-c-text-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -60,6 +91,35 @@
 .VPButton.brand:hover {
   background-color: var(--akylas-secondary);
   border-color: var(--akylas-secondary);
+  box-shadow: 0 4px 12px rgba(66, 192, 237, 0.3);
+}
+
+/* Features section with gradient background */
+.VPFeatures {
+  position: relative;
+}
+
+.VPFeatures::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent, rgba(66, 192, 237, 0.05), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.VPFeature {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(66, 192, 237, 0.15);
 }
 
 /* Portfolio Grid Styles */
