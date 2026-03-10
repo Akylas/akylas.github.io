@@ -43,7 +43,7 @@ import StoreBadges from '../.vitepress/components/StoreBadges.vue'
 
 <GitHubProject 
   repo="Akylas/OSS-DocumentScanner" 
-  fastlane-path="fastlane/metadata/android/en-US"
+  fastlane-path="fastlane/metadata/com.akylas.documentscanner/android/en-US"
 />
 
 ## Technology Stack

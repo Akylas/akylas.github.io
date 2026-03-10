@@ -37,10 +37,10 @@ export const projects: PortfolioProject[] = [
     featured: true,
     github: {
       repo: 'Akylas/OSS-DocumentScanner',
-      fastlanePath: 'fastlane/metadata/android/en-US'
+      fastlanePath: 'fastlane/metadata/com.akylas.documentscanner/android/en-US'
     },
     stores: {
-      ios: 'https://apps.apple.com/app/oss-document-scanner/id1563961977',
+      ios: 'https://apps.apple.com/app/oss-document-scanner/id6472918564',
       android: 'https://play.google.com/store/apps/details?id=com.akylas.documentscanner'
     }
   },
