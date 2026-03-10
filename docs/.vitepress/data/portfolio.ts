@@ -6,17 +6,44 @@ export interface PortfolioProject {
   description: string
   thumbnail: string
   images?: string[]
+  featureImage?: string
   date: string
   client: string
   category: string
   tags?: string[]
+  featured?: boolean
   github?: {
     repo: string
     fastlanePath?: string
   }
+  stores?: {
+    ios?: string
+    android?: string
+  }
 }
 
 export const projects: PortfolioProject[] = [
+  {
+    id: 'document-scanner',
+    title: 'OSS Document Scanner',
+    subtitle: 'Open Source Document Scanner',
+    description: 'A powerful open-source document scanning application with OCR capabilities, edge detection, and PDF generation. Built with NativeScript for iOS and Android.',
+    thumbnail: '/img/portfolio/logo.png',
+    images: [],
+    date: 'Ongoing',
+    client: 'Open Source',
+    category: 'Open Source Development',
+    tags: ['NativeScript', 'OCR', 'Document Scanning', 'Open Source', 'iOS', 'Android'],
+    featured: true,
+    github: {
+      repo: 'Akylas/OSS-DocumentScanner',
+      fastlanePath: 'fastlane/metadata/android/en-US'
+    },
+    stores: {
+      ios: 'https://apps.apple.com/app/oss-document-scanner/id1563961977',
+      android: 'https://play.google.com/store/apps/details?id=com.akylas.documentscanner'
+    }
+  },
   {
     id: 'ecairn',
     title: 'eCairn',
@@ -27,7 +54,8 @@ export const projects: PortfolioProject[] = [
     date: 'June 2019',
     client: 'NativeScript',
     category: 'Application Development',
-    tags: ['NativeScript', 'Mobile', 'Navigation', 'iOS', 'Android']
+    tags: ['NativeScript', 'Mobile', 'Navigation', 'iOS', 'Android'],
+    featured: true
   },
   {
     id: 'activelook',
@@ -39,7 +67,8 @@ export const projects: PortfolioProject[] = [
     date: 'January 2018',
     client: 'NativeScript',
     category: 'Application Development',
-    tags: ['NativeScript', 'Mobile', 'IoT', 'Bluetooth', 'iOS', 'Android']
+    tags: ['NativeScript', 'Mobile', 'IoT', 'Bluetooth', 'iOS', 'Android'],
+    featured: true
   },
   {
     id: 'oenoneo',
@@ -64,22 +93,6 @@ export const projects: PortfolioProject[] = [
     client: 'Titanium Mobile',
     category: 'Application Development',
     tags: ['Titanium Mobile', 'Mobile', 'Social', 'iOS', 'Android']
-  },
-  {
-    id: 'document-scanner',
-    title: 'OSS Document Scanner',
-    subtitle: 'Open Source Document Scanner',
-    description: 'A powerful open-source document scanning application with OCR capabilities, edge detection, and PDF generation. Built with NativeScript for iOS and Android.',
-    thumbnail: '/img/portfolio/logo.png',
-    images: [],
-    date: 'Ongoing',
-    client: 'Open Source',
-    category: 'Open Source Development',
-    tags: ['NativeScript', 'OCR', 'Document Scanning', 'Open Source', 'iOS', 'Android'],
-    github: {
-      repo: 'Akylas/OSS-DocumentScanner',
-      fastlanePath: 'fastlane'
-    }
   },
   {
     id: 'alpimaps',

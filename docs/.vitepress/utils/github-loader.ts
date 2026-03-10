@@ -15,6 +15,8 @@ export interface FastlaneMetadata {
   description?: string
   keywords?: string[]
   screenshots?: string[]
+  icon?: string
+  featureGraphic?: string
   version?: string
   releaseNotes?: string
 }
@@ -133,6 +135,36 @@ export async function fetchFastlaneMetadata(
       }
     } catch {
       // Screenshots directory might not exist
+    }
+
+    // Fetch icon (usually in parent directory or images folder)
+    try {
+      const iconPath = fastlanePath.replace('/en-US', '/icon.png')
+      const { data: iconData } = await octokit.repos.getContent({
+        owner,
+        repo: repoName,
+        path: iconPath
+      })
+      if ('download_url' in iconData && iconData.download_url) {
+        metadata.icon = iconData.download_url
+      }
+    } catch {
+      // Icon might not exist
+    }
+
+    // Fetch feature graphic (Android)
+    try {
+      const featureGraphicPath = fastlanePath.replace('/en-US', '/featureGraphic.png')
+      const { data: featureData } = await octokit.repos.getContent({
+        owner,
+        repo: repoName,
+        path: featureGraphicPath
+      })
+      if ('download_url' in featureData && featureData.download_url) {
+        metadata.featureGraphic = featureData.download_url
+      }
+    } catch {
+      // Feature graphic might not exist
     }
 
     return Object.keys(metadata).length > 0 ? metadata : null

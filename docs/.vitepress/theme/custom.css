@@ -21,13 +21,23 @@
   --vp-font-family-mono: 'Monaco', 'Courier New', monospace;
 }
 
-/* Hero section customization */
+/* Hero section customization - more modern look */
 .VPHero .name {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, var(--akylas-primary), var(--akylas-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .VPHero .tagline {
   color: var(--akylas-muted);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.VPHero .actions {
+  padding-top: 2rem;
 }
 
 /* Link colors */
@@ -143,6 +153,31 @@
   border-radius: 8px;
 }
 
+/* Screenshot sizing in content pages */
+.vp-doc img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+}
+
+/* Reduce size for portrait screenshots (common for mobile apps) */
+.vp-doc img[src*="Screen"],
+.vp-doc img[src*="screenshot"],
+.vp-doc img[src*="Simulator"] {
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feature images can be larger */
+.vp-doc img[src*="feature"],
+.vp-doc img[src*="banner"] {
+  max-width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .portfolio-grid {
@@ -151,5 +186,11 @@
   
   .github-stats {
     grid-template-columns: 1fr;
+  }
+  
+  .vp-doc img[src*="Screen"],
+  .vp-doc img[src*="screenshot"],
+  .vp-doc img[src*="Simulator"] {
+    max-width: 100%;
   }
 }

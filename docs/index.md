@@ -40,6 +40,18 @@ features:
     details: Constantly exploring new technologies and methodologies to deliver cutting-edge solutions that solve real-world problems.
 ---
 
+<script setup>
+import FeaturedProjects from './.vitepress/components/FeaturedProjects.vue'
+</script>
+
+<FeaturedProjects />
+
+<style scoped>
+:deep(.VPFeatures) {
+  padding-top: 48px !important;
+}
+</style>
+
 ## About Akylas
 
 Akylas is a mobile app development consultancy specializing in creating high-quality, performant applications for iOS and Android. With deep expertise in cross-platform development using NativeScript and modern JavaScript frameworks, we help businesses bring their ideas to life.

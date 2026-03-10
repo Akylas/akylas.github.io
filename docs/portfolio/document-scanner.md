@@ -1,5 +1,10 @@
 # OSS Document Scanner
 
+<script setup>
+import GitHubProject from '../.vitepress/components/GitHubProject.vue'
+import StoreBadges from '../.vitepress/components/StoreBadges.vue'
+</script>
+
 <div style="display: flex; gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap;">
   <a href="https://github.com/Akylas/OSS-DocumentScanner" target="_blank" rel="noopener" class="badge-link">
     <img src="https://img.shields.io/github/stars/Akylas/OSS-DocumentScanner?style=social" alt="GitHub stars">
@@ -11,6 +16,13 @@
     <img src="https://img.shields.io/github/license/Akylas/OSS-DocumentScanner" alt="License">
   </a>
 </div>
+
+## Download
+
+<StoreBadges 
+  ios-url="https://apps.apple.com/app/oss-document-scanner/id1563961977"
+  android-url="https://play.google.com/store/apps/details?id=com.akylas.documentscanner"
+/>
 
 ## Overview
 
@@ -26,6 +38,13 @@
 - 🎯 **High Accuracy**: Advanced computer vision algorithms
 - 💾 **Local Storage**: Keep your documents private and secure
 - 🎨 **Customizable**: Configurable settings and themes
+
+## Project Information
+
+<GitHubProject 
+  repo="Akylas/OSS-DocumentScanner" 
+  fastlane-path="fastlane/metadata/android/en-US"
+/>
 
 ## Technology Stack
 
