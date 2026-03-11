@@ -47,6 +47,7 @@ onMounted(async () => {
   if (project.value?.github?.repo && project.value?.github?.fastlanePath) {
     try {
       loadingFastlane.value = true
+      console.log('PortofolioPage0, ', project.value)
       fastlaneData.value = await fetchFastlaneMetadata(
         project.value.github.repo,
         project.value.github.fastlanePath

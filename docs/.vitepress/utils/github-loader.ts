@@ -92,6 +92,7 @@ export async function fetchFastlaneMetadata(
     // Helper to fetch file content
     const fetchFile = async (path: string): Promise<string | undefined> => {
       try {
+      console.log('fetchFile, ', owner, repoName, path)
         const { data } = await octokit.repos.getContent({
           owner,
           repo: repoName,
@@ -107,24 +108,22 @@ export async function fetchFastlaneMetadata(
     }
 
     // Fetch standard Fastlane metadata files
-    const [name, subtitle, description, keywords] = await Promise.all([
-      fetchFile(`${fastlanePath}/name.txt`),
-      fetchFile(`${fastlanePath}/subtitle.txt`),
-      fetchFile(`${fastlanePath}/description.txt`),
-      fetchFile(`${fastlanePath}/keywords.txt`)
+    const [name, subtitle, description] = await Promise.all([
+      fetchFile(`${fastlanePath}/title.txt`),
+      fetchFile(`${fastlanePath}/short_description.txt`),
+      fetchFile(`${fastlanePath}/full_description.txt`),
     ])
 
     if (name) metadata.name = name
     if (subtitle) metadata.subtitle = subtitle
     if (description) metadata.description = description
-    if (keywords) metadata.keywords = keywords.split(',').map(k => k.trim())
 
     // Fetch screenshots
     try {
       const { data: screenshotsDir } = await octokit.repos.getContent({
         owner,
         repo: repoName,
-        path: `${fastlanePath}/screenshots`
+        path: `${fastlanePath}/images/phoneScreenshots`
       })
 
       if (Array.isArray(screenshotsDir)) {
