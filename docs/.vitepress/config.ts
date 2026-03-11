@@ -13,6 +13,9 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: 'Akylas Portfolio' }],
   ],
 
+  // Enable dark mode by default
+  appearance: 'dark',
+
   themeConfig: {
     logo: '/logo.png',
     
