@@ -2,6 +2,12 @@
 
 Get in touch for project inquiries, consulting services, or collaboration opportunities.
 
+<script setup>
+import ContactForm from './.vitepress/components/ContactForm.vue'
+</script>
+
+<ContactForm />
+
 ## Connect With Me
 
 <div class="contact-section">
