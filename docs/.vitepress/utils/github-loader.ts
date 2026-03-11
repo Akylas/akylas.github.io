@@ -41,9 +41,10 @@ export async function fetchGitHubRepo(repo: string): Promise<GitHubProjectData |
   try {
     const [owner, repoName] = repo.split('/')
     
-    // Note: For production, you'd want to use GITHUB_TOKEN for higher rate limits
+    // Use GITHUB_TOKEN from environment for higher rate limits
+    // In browser context, only import.meta.env is available
     const octokit = new Octokit({
-      // auth: process.env.GITHUB_TOKEN
+      auth: import.meta.env.VITE_GITHUB_TOKEN
     })
 
     const { data } = await octokit.repos.get({
@@ -84,7 +85,11 @@ export async function fetchFastlaneMetadata(
 ): Promise<FastlaneMetadata | null> {
   try {
     const [owner, repoName] = repo.split('/')
-    const octokit = new Octokit()
+    // Use GITHUB_TOKEN from environment for higher rate limits
+    // In browser context, only import.meta.env is available
+    const octokit = new Octokit({
+      auth: import.meta.env.VITE_GITHUB_TOKEN
+    })
 
     // Fetch metadata files
     const metadata: FastlaneMetadata = {}
