@@ -17,7 +17,7 @@ Showcasing mobile applications and projects developed over the years using Nativ
 ## Project Categories
 
 ### Mobile Applications
-Cross-platform mobile apps for iOS and Android, built with modern frameworks and focused on performance and user experience.
+Cross-platform or native mobile apps for iOS and Android, built with modern frameworks and focused on performance and user experience.
 
 ### Open Source Projects
 Contributing to and maintaining open source projects that benefit the developer community, with a focus on mobile development tools.
@@ -31,15 +31,14 @@ Custom solutions for businesses, from small startups to large enterprises, helpi
 
 **Mobile Development**
 - NativeScript (Vue, Angular, Core)
-- Titanium Mobile
 - Native iOS & Android
-- React Native
 
 **Languages**
 - TypeScript/JavaScript
 - Swift & Objective-C
 - Java & Kotlin
-- Python
+- C++
+- Typescript / Javascript
 
 **Tools & Services**
 - Fastlane for CI/CD

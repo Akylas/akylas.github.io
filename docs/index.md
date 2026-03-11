@@ -4,9 +4,9 @@ layout: home
 hero:
   name: "Akylas"
   text: "Open Source Developer & Mobile App Consultant"
-  tagline: "Building innovative mobile applications with NativeScript, Vue, and modern web technologies"
+  tagline: "Building innovative mobile applications using either native or cross-platform technologies"
   image:
-    src: /logo.png
+    src: /img/akylas_avatar.png
     alt: Akylas Logo
   actions:
     - theme: brand
@@ -27,8 +27,8 @@ features:
     title: Open Source Contributor
     details: Active contributor to the open-source community with multiple projects on GitHub, focusing on mobile development tools and libraries.
   - icon: 🎨
-    title: Full Stack Solutions
-    details: End-to-end application development from design to deployment, with experience in Vue.js, Node.js, and modern JavaScript frameworks.
+    title: Full Stack Mobile Solutions
+    details: End-to-end application development from design to deployment, with experience in Vue.js, Svelte, Node.js, Typescript and modern JavaScript frameworks.
   - icon: 🚀
     title: Performance Optimization
     details: Expert in optimizing mobile applications for performance, battery life, and user experience across different devices and platforms.

@@ -188,6 +188,7 @@ onMounted(async () => {
 }
 
 .stat-value {
+  line-height: initial;
   font-size: 1.8rem;
   font-weight: bold;
   background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));

@@ -105,7 +105,7 @@ const displayedProjects = props.limit > 0
 .portfolio-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
   transition: transform 0.3s ease;
   padding: 0.5rem;
 }

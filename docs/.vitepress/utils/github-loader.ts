@@ -33,7 +33,6 @@ export interface GitHubProjectData {
   lastUpdate: string
   fastlaneMetadata?: FastlaneMetadata
 }
-
 /**
  * Fetch repository data from GitHub
  */
@@ -73,11 +72,6 @@ export async function fetchGitHubRepo(repo: string): Promise<GitHubProjectData |
  * Fetch Fastlane metadata from a GitHub repository
  * 
  * Fastlane stores app metadata in /fastlane/metadata directory with structure:
- * - fastlane/metadata/en-US/name.txt
- * - fastlane/metadata/en-US/subtitle.txt
- * - fastlane/metadata/en-US/description.txt
- * - fastlane/metadata/en-US/keywords.txt
- * - fastlane/metadata/en-US/screenshots/
  */
 export async function fetchFastlaneMetadata(
   repo: string, 
@@ -143,7 +137,7 @@ export async function fetchFastlaneMetadata(
 
     // Fetch icon (usually in parent directory or images folder)
     try {
-      const iconPath = fastlanePath.replace('/en-US', '/icon.png')
+      const iconPath = `${fastlanePath}/images/icon.png`
       const { data: iconData } = await octokit.repos.getContent({
         owner,
         repo: repoName,
@@ -158,7 +152,7 @@ export async function fetchFastlaneMetadata(
 
     // Fetch feature graphic (Android)
     try {
-      const featureGraphicPath = fastlanePath.replace('/en-US', '/featureGraphic.png')
+      const featureGraphicPath = `${fastlanePath}/images/featureGraphic.png`
       const { data: featureData } = await octokit.repos.getContent({
         owner,
         repo: repoName,

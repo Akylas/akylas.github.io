@@ -122,12 +122,12 @@ onMounted(async () => {
     </div>
 
     <!-- GitHub Project Integration -->
-    <div v-if="project.github" class="github-section">
+    <!-- <div v-if="project.github" class="github-section">
       <GitHubProject 
         :repo="project.github.repo" 
         :fastlane-path="project.github.fastlanePath"
       />
-    </div>
+    </div> -->
 
     <!-- Project Images -->
     <div v-if="displayScreenshots.length > 0" class="images-section">
@@ -142,6 +142,7 @@ onMounted(async () => {
         />
       </div>
     </div>
+    
 
     <!-- Back Button -->
     <div class="back-button">
@@ -304,6 +305,7 @@ onMounted(async () => {
 }
 
 .tags-section h3 {
+  line-height: initial;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   background: linear-gradient(135deg, var(--akylas-primary), var(--akylas-accent));
@@ -360,7 +362,7 @@ onMounted(async () => {
 
 .images-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
 }
 

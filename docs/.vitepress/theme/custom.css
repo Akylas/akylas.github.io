@@ -447,6 +447,7 @@ body {
 }
 
 .stat-card .stat-value {
+  line-height: initial;
   font-size: 3rem;
   font-weight: 900;
   background: linear-gradient(135deg, var(--akylas-primary), var(--akylas-accent));
@@ -489,7 +490,7 @@ body {
   height: auto;
   border-radius: 16px;
   box-shadow: var(--shadow-lg);
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid var(--vp-c-divider);
 }
@@ -521,6 +522,9 @@ body {
 }
 
 /* Section Headers - NEW */
+.vp-doc h2 {
+  padding-bottom: 24px;
+}
 .vp-doc h2,
 .vp-doc h3 {
   position: relative;

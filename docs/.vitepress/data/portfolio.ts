@@ -31,7 +31,7 @@ export const projects: PortfolioProject[] = [
     title: 'OSS Document Scanner',
     subtitle: 'Open Source Document Scanner',
     description: 'A powerful open-source document scanning application with OCR capabilities, edge detection, and PDF generation. Built with NativeScript for iOS and Android.',
-    thumbnail: '/img/portfolio/logo.png',
+    thumbnail: 'https://raw.githubusercontent.com/Akylas/OSS-DocumentScanner/main/fastlane/metadata/com.akylas.documentscanner/android/en-US/images/icon.png',
     images: [],
     date: 'Ongoing',
     client: 'Open Source',

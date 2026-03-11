@@ -6,13 +6,14 @@ I'm Martin Guillon, an independent mobile application developer and consultant b
 
 ### My Journey
 
-With over a decade of experience in mobile development, I've specialized in creating high-quality applications using technologies like NativeScript, Vue.js, and native iOS/Android development. My passion lies in building tools and applications that make a real difference in people's daily lives.
+With over a decade of experience in mobile development, I've specialized in creating high-quality applications using technologies like NativeScript, Vue, Svelte, and native iOS/Android development. My passion lies in building tools and applications that make a real difference in people's daily lives.
 
 ### Open Source Commitment
 
 I'm a strong believer in open source software. You can find my work on GitHub under the profile [@farfromrefug](https://github.com/farfromrefug), where I maintain and contribute to various projects:
 
 - **NativeScript Plugins**: Multiple plugins for the NativeScript ecosystem
+- **Mobile Applications**: Multiple Open Source applications
 - **Mobile Libraries**: Reusable components and utilities for mobile development
 - **Developer Tools**: Tools that make mobile development easier and more efficient
 
@@ -25,14 +26,11 @@ I'm a strong believer in open source software. You can find my work on GitHub un
 - Performance tuning and optimization
 
 **Web Technologies**
-- Vue.js and modern JavaScript frameworks
+- Vue.js, Svelte and modern JavaScript frameworks
 - TypeScript for type-safe development
-- Static site generation with VitePress
-- Progressive Web Applications (PWA)
 
 **Development Practices**
 - Clean code and architecture patterns
-- Test-driven development
 - Continuous integration and deployment
 - Git workflow and version control
 
@@ -45,10 +43,12 @@ I'm a strong believer in open source software. You can find my work on GitHub un
 1. **Custom Mobile Application Development**
    - Design and development from concept to deployment
    - Cross-platform solutions that work on iOS and Android
+   - Native solutions on iOS and Android
    - Native-quality user experiences
 
 2. **Open Source Development & Support**
    - Custom plugin development for NativeScript
+   - Mobile applications for everyone to enjoy free and private software
    - Open source project maintenance and contributions
    - Community support and documentation
 
@@ -81,7 +81,7 @@ For project inquiries, please visit the [contact page](/contact).
 
 <div class="github-stats">
   <div class="stat-card">
-    <div class="stat-value">100+</div>
+    <div class="stat-value">1000+</div>
     <div class="stat-label">Open Source Contributions</div>
   </div>
   <div class="stat-card">
