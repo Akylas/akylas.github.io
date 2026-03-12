@@ -1,5 +1,21 @@
 _site
 
+# VitePress
+node_modules
+dist
+.vitepress/cache
+.vitepress/dist
+docs/.vitepress/cache
+docs/.vitepress/dist
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

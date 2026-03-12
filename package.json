@@ -1,0 +1,36 @@
+{
+  "name": "akylas.github.io",
+  "version": "2.0.0",
+  "description": "Akylas Portfolio - Modern VitePress Website",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akylas/akylas.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "vitepress",
+    "akylas"
+  ],
+  "author": "Akylas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akylas/akylas.github.io/issues"
+  },
+  "homepage": "https://github.com/Akylas/akylas.github.io#readme",
+  "devDependencies": {
+    "axios": "^1.13.6",
+    "gray-matter": "^4.0.3",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.30"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "lucide-vue-next": "^0.577.0"
+  }
+}

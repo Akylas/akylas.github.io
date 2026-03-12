@@ -1,0 +1,636 @@
+/**
+ * Custom theme styles for Akylas portfolio
+ * Modern theme with gradients, elevations, and animations
+ * Works in both light and dark modes
+ */
+
+:root {
+
+  --vp-layout-max-width: 1940px;
+  /* Brand Colors - Shared across themes */
+  --vp-c-brand-1: #42C0ED;
+  --vp-c-brand-2: #16afe6;
+  --vp-c-brand-3: #42C0ED;
+  --vp-c-brand-soft: rgba(66, 192, 237, 0.14);
+  
+  /* Custom colors */
+  --akylas-primary: #42C0ED;
+  --akylas-secondary: #16afe6;
+  --akylas-accent: #00d4ff;
+  
+  /* Typography */
+  --vp-font-family-base: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Monaco', 'Courier New', monospace;
+  
+  /* Light theme defaults */
+  --akylas-bg-1: #ffffff;
+  --akylas-bg-2: #f6f8fa;
+  --akylas-bg-3: #eef2f5;
+  --akylas-muted: #6b7280;
+  --akylas-overlay: rgba(255, 255, 255, 0.9);
+  
+  /* Elevation shadows for light theme */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.18);
+  --shadow-brand: 0 8px 32px rgba(66, 192, 237, 0.25);
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: 1088px !important;
+}
+
+/* Dark theme overrides */
+.dark {
+  --akylas-bg-1: #0f1419;
+  --akylas-bg-2: #1a1f2e;
+  --akylas-bg-3: #0a0e27;
+  --akylas-muted: #8b92a7;
+  --akylas-overlay: rgba(15, 20, 25, 0.8);
+  
+  /* Elevation shadows for dark theme */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.6);
+  --shadow-brand: 0 8px 32px rgba(66, 192, 237, 0.35);
+}
+
+/* Global animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body enhancements - Light theme */
+body {
+  background: linear-gradient(135deg, var(--akylas-bg-3) 0%, var(--akylas-bg-2) 50%, var(--akylas-bg-3) 100%);
+  background-attachment: fixed;
+}
+
+/* Body enhancements - Dark theme */
+.dark body {
+  background: linear-gradient(135deg, #050713 0%, #0a0e27 50%, #050713 100%);
+  background-attachment: fixed;
+}
+
+/* Hero section - DRAMATIC upgrade */
+.VPHero {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 2rem !important;
+}
+.VPImage {
+  border-radius: 50%;
+  top: unset !important;
+  left: unset !important;
+  transform: unset !important;
+}
+.image-container:has(.VPImage) {
+  justify-content: end;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(66, 192, 237, 0.15), transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.1), transparent 40%),
+              radial-gradient(circle at 20% 80%, rgba(22, 175, 230, 0.1), transparent 40%);
+  animation: float 20s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Dark theme - more intense gradients */
+.dark .VPHero::before {
+  background: radial-gradient(circle at center, rgba(66, 192, 237, 0.25), transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.15), transparent 40%),
+              radial-gradient(circle at 20% 80%, rgba(22, 175, 230, 0.15), transparent 40%);
+}
+
+.VPHero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, var(--akylas-overlay) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.VPHero .container {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease-out;
+}
+
+.VPHero .name {
+  font-family: 'Inter', 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, var(--akylas-primary) 0%, var(--akylas-accent) 50%, var(--akylas-secondary) 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900 !important;
+  animation: shimmer 3s linear infinite;
+  text-shadow: 0 0 80px rgba(66, 192, 237, 0.5);
+  filter: drop-shadow(0 0 20px rgba(66, 192, 237, 0.3));
+}
+
+.VPHero .text {
+  background: linear-gradient(135deg, var(--vp-c-text-1), var(--vp-c-text-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.VPHero .tagline {
+  color: var(--akylas-muted);
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.VPHero .actions {
+  padding-top: 2.5rem;
+}
+
+/* Link colors with gradient hover */
+.vp-doc a {
+  color: var(--akylas-primary);
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.vp-doc a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--akylas-primary), var(--akylas-accent));
+  transition: width 0.3s ease;
+}
+
+.vp-doc a:hover::after {
+  width: 100%;
+}
+
+.vp-doc a:hover {
+  color: var(--akylas-accent);
+}
+
+/* Button styles - Enhanced */
+.VPButton {
+  transition: all 0.3s ease;
+}
+
+.VPButton.brand {
+  background: linear-gradient(135deg, var(--akylas-primary), var(--akylas-secondary));
+  border: none;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.VPButton.brand::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.VPButton.brand:hover::before {
+  left: 100%;
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-brand);
+}
+
+.VPButton.alt {
+  border: 2px solid var(--akylas-primary);
+  background: rgba(66, 192, 237, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.VPButton.alt:hover {
+  background: linear-gradient(135deg, var(--akylas-primary), var(--akylas-secondary));
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-brand);
+}
+
+/* Features section - ENHANCED */
+.VPFeatures {
+  position: relative;
+  padding: 4rem 0 !important;
+}
+
+.VPFeatures::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(66, 192, 237, 0.08) 25%,
+    rgba(0, 212, 255, 0.05) 50%,
+    rgba(22, 175, 230, 0.08) 75%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.VPFeature {
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* Dark theme - glassmorphism effect */
+.dark .VPFeature {
+  background: linear-gradient(135deg, rgba(26, 31, 46, 0.8), rgba(15, 20, 25, 0.9));
+  border: 1px solid rgba(66, 192, 237, 0.1);
+}
+
+.VPFeature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--akylas-primary), var(--akylas-accent), var(--akylas-secondary));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.VPFeature:hover::before {
+  opacity: 1;
+}
+
+.VPFeature:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-brand);
+  border-color: rgba(66, 192, 237, 0.3);
+}
+
+/* Portfolio Grid Styles - ENHANCED */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin: 2rem 0;
+}
+
+.portfolio-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 20px;
+  padding: 0;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--vp-c-bg-soft);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+/* Dark theme - more transparent background */
+.dark .portfolio-card {
+  background: linear-gradient(135deg, rgba(26, 31, 46, 0.8), rgba(15, 20, 25, 0.9));
+  border: 1px solid rgba(66, 192, 237, 0.15);
+}
+
+.portfolio-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--akylas-primary), var(--akylas-accent), var(--akylas-secondary));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover::before {
+  opacity: 1;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-brand);
+  border-color: rgba(66, 192, 237, 0.4);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 0;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-card h3 {
+  margin: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--vp-c-text-1);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.portfolio-card p {
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+  margin: 0 1.5rem 1.5rem;
+  line-height: 1.6;
+}
+
+.portfolio-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: linear-gradient(135deg, var(--akylas-primary), var(--akylas-secondary));
+  color: white;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.portfolio-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* GitHub Stats Styles - ENHANCED */
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.stat-card {
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(66, 192, 237, 0.1), rgba(22, 175, 230, 0.05));
+  border: 1px solid rgba(66, 192, 237, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--akylas-primary), var(--akylas-accent), var(--akylas-secondary));
+}
+
+.stat-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: var(--shadow-brand);
+  border-color: rgba(66, 192, 237, 0.4);
+}
+
+.stat-card .stat-value {
+  line-height: initial;
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--akylas-primary), var(--akylas-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-label {
+  font-size: 1rem;
+  color: var(--vp-c-text-2);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Contact Section - ENHANCED */
+.contact-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 3rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 24px;
+  border: 1px solid var(--vp-c-divider);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(20px);
+}
+
+/* Dark theme */
+.dark .contact-section {
+  background: linear-gradient(135deg, rgba(26, 31, 46, 0.9), rgba(15, 20, 25, 0.95));
+  border: 1px solid rgba(66, 192, 237, 0.2);
+}
+
+/* Screenshot sizing in content pages - ENHANCED */
+.vp-doc img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  /* margin: 2rem 0; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* Dark theme - add subtle border glow */
+.dark .vp-doc img {
+  border: 1px solid rgba(66, 192, 237, 0.1);
+}
+
+.vp-doc img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-brand);
+}
+
+/* Reduce size for portrait screenshots */
+.vp-doc img[src*="Screen"],
+.vp-doc img[src*="screenshot"],
+.vp-doc img[src*="Simulator"] {
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feature images can be larger */
+.vp-doc img[src*="feature"],
+.vp-doc img[src*="banner"] {
+  max-width: 100%;
+}
+ .vp-doc h1 {
+  line-height: 50px;
+ }
+
+/* Section Headers - NEW */
+.vp-doc h2 {
+  padding-bottom: 24px;
+}
+.vp-doc h2,
+.vp-doc h3 {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.vp-doc h2::before,
+.vp-doc h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 70%;
+  background: linear-gradient(180deg, var(--akylas-primary), var(--akylas-secondary));
+  border-radius: 2px;
+}
+
+/* Code blocks - ENHANCED */
+.vp-doc div[class*="language-"] {
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+}
+
+/* Dark theme */
+.dark .vp-doc div[class*="language-"] {
+  border: 1px solid rgba(66, 192, 237, 0.2);
+}
+
+/* Tables - ENHANCED */
+.vp-doc table {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  box-shadow: var(--shadow-md);
+}
+
+.vp-doc thead {
+  background: rgba(66, 192, 237, 0.1);
+}
+
+/* Dark theme */
+.dark .vp-doc table {
+  border: 1px solid rgba(66, 192, 237, 0.2);
+}
+
+.dark .vp-doc thead {
+  background: linear-gradient(135deg, rgba(66, 192, 237, 0.2), rgba(22, 175, 230, 0.1));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .github-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .vp-doc img[src*="Screen"],
+  .vp-doc img[src*="screenshot"],
+  .vp-doc img[src*="Simulator"] {
+    max-width: 100%;
+  }
+
+  .VPHero {
+    padding: 3rem 1.5rem !important;
+  }
+
+  .contact-section {
+    padding: 2rem;
+  }
+}
+
+/* Scroll animations - NEW */
+@media (prefers-reduced-motion: no-preference) {
+  .portfolio-card,
+  .stat-card,
+  .VPFeature {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .portfolio-card:nth-child(2) { animation-delay: 0.1s; }
+  .portfolio-card:nth-child(3) { animation-delay: 0.2s; }
+  .portfolio-card:nth-child(4) { animation-delay: 0.3s; }
+}
