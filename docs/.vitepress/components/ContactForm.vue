@@ -1,9 +1,9 @@
 <template>
   <div class="contact-form-wrapper">
-    <div class="contact-form-header">
+    <!-- <div class="contact-form-header">
       <h2>Send Me a Message</h2>
       <p>Have a project in mind or want to discuss collaboration? Fill out the form below and I'll get back to you within 24-48 hours.</p>
-    </div>
+    </div> -->
 
     <form @submit.prevent="handleSubmit" class="contact-form" ref="formRef">
       <div class="form-row">

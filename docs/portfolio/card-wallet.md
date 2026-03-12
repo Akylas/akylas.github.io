@@ -2,11 +2,11 @@
 import PortfolioPage from '../.vitepress/components/PortfolioPage.vue'
 </script>
 
-<PortfolioPage project-id="document-scanner" />
+<PortfolioPage project-id="card-wallet" />
 
 ## Technology Stack
 
-**Framework**: NativeScript with Svelte
+**Framework**: NativeScript with Svelte 
 **Languages**: TypeScript, JavaScript  
 **Image Processing**: OpenCV, custom algorithms  
 **OCR Engine**: Tesseract integration  
@@ -14,7 +14,8 @@ import PortfolioPage from '../.vitepress/components/PortfolioPage.vue'
 
 ## Key Features
 
-- 📸 **Fast Document Detection**: Automatic edge detection for quick document capture
+- 📸 **Fast Card Detection**: Automatic edge detection for quick card capture from camera
+- 🎨 **Pass Book support**: import, visualize, export your .pkpass
 - 🎨 **Image Enhancement**: Multiple filters and enhancement options
 - 📄 **PDF Generation**: Create multi-page PDFs from scanned documents
 - 🔍 **OCR Support**: Extract text from scanned documents
@@ -54,6 +55,12 @@ For questions, issues, or feature requests:
 - 📝 [Open an issue](https://github.com/Akylas/OSS-DocumentScanner/issues)
 - 💬 [Discussions](https://github.com/Akylas/OSS-DocumentScanner/discussions)
 - 📧 Contact via GitHub profile
+
+## Related Projects
+
+Check out other open source projects:
+- [Other NativeScript Plugins](https://github.com/nativescript-community?tab=repositories)
+- [Akylas Organization](https://github.com/Akylas)
 
 ---
 

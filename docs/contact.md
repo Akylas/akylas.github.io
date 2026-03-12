@@ -16,7 +16,7 @@ import ContactForm from './.vitepress/components/ContactForm.vue'
 
 - **GitHub**: [@farfromrefug](https://github.com/farfromrefug)
 - **Company**: [Akylas Organization](https://github.com/Akylas)
-- **Email**: Contact via GitHub profile
+- **Email**: Contact via the contact form or through GitHub profile
 
 ### What I Can Help With
 
@@ -69,13 +69,13 @@ I typically respond to inquiries within 24-48 hours during business days. For ur
 **Available for**: Remote work worldwide  
 **Time Zone**: CET/CEST (UTC+1/+2)
 
----
+<!-- --- -->
 
-<div style="text-align: center; margin: 3rem 0; padding: 2rem; background: var(--vp-c-bg-soft); border-radius: 12px;">
+<!-- <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: var(--vp-c-bg-soft); border-radius: 12px;">
   <h3>Ready to Start Your Project?</h3>
   <p>Let's discuss how we can work together to bring your ideas to life.</p>
   <a href="https://github.com/farfromrefug" target="_blank" rel="noopener" class="vp-button brand medium">View GitHub Profile →</a>
-</div>
+</div> -->
 
 ## FAQ
 

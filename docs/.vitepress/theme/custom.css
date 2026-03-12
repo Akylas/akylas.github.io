@@ -5,6 +5,8 @@
  */
 
 :root {
+
+  --vp-layout-max-width: 1940px;
   /* Brand Colors - Shared across themes */
   --vp-c-brand-1: #42C0ED;
   --vp-c-brand-2: #16afe6;
@@ -33,6 +35,10 @@
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
   --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.18);
   --shadow-brand: 0 8px 32px rgba(66, 192, 237, 0.25);
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: 1088px !important;
 }
 
 /* Dark theme overrides */
@@ -103,6 +109,15 @@ body {
   position: relative;
   overflow: hidden;
   padding: 4rem 2rem !important;
+}
+.VPImage {
+  border-radius: 50%;
+  top: unset !important;
+  left: unset !important;
+  transform: unset !important;
+}
+.image-container:has(.VPImage) {
+  justify-content: end;
 }
 
 .VPHero::before {
@@ -520,6 +535,9 @@ body {
 .vp-doc img[src*="banner"] {
   max-width: 100%;
 }
+ .vp-doc h1 {
+  line-height: 50px;
+ }
 
 /* Section Headers - NEW */
 .vp-doc h2 {

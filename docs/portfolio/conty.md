@@ -2,7 +2,7 @@
 import PortfolioPage from '../.vitepress/components/PortfolioPage.vue'
 </script>
 
-<PortfolioPage project-id="alpimaps" />
+<PortfolioPage project-id="conty" />
 
 ## Technology Stack
 
@@ -83,14 +83,14 @@ Contributions are welcome! Whether it's:
 - 📖 Documentation improvements
 - 🔧 Code contributions
 
-Check out the [Contributing Guidelines](https://github.com/Akylas/alpimaps/blob/master/CONTRIBUTING.md) to get started.
+Check out the [Contributing Guidelines](https://github.com/Akylas/conty/blob/master/CONTRIBUTING.md) to get started.
 
 ## Support
 
 For questions, issues, or feature requests:
 
-- 📝 [Open an issue](https://github.com/Akylas/alpimaps/issues)
-- 💬 [Discussions](https://github.com/Akylas/alpimaps/discussions)
+- 📝 [Open an issue](https://github.com/Akylas/conty/issues)
+- 💬 [Discussions](https://github.com/Akylas/conty/discussions)
 - 📧 Contact via GitHub profile
 
 ---
@@ -98,7 +98,7 @@ For questions, issues, or feature requests:
 <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: var(--vp-c-bg-soft); border-radius: 12px;">
   <h3>⭐ Star This Project</h3>
   <p>If you find this project useful, please consider starring it on GitHub!</p>
-  <a href="https://github.com/Akylas/alpimaps" target="_blank" rel="noopener" class="vp-button brand medium">View on GitHub →</a>
+  <a href="https://github.com/Akylas/conty" target="_blank" rel="noopener" class="vp-button brand medium">View on GitHub →</a>
 </div>
 
 <style scoped>

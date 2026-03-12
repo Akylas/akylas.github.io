@@ -4,19 +4,57 @@ I'm passionate about open source development and actively contribute to various 
 
 ## Featured Projects
 
+I maintain multiple Open Source applications
+
+
+
+<div class="projects">
+<a target="_blank" href="https://github.com/Akylas/OSS-DocumentScanner">
+  <img src="https://github.com/Akylas/com.akylas.documentscanner/raw/main/fastlane/metadata/com.akylas.documentscanner/android/en-US/images/icon.png" alt="OSS Document Scanner"/>
+</a>
+<a target="_blank" href="https://github.com/Akylas/OSS-DocumentScanner">
+  <img src="https://github.com/Akylas/com.akylas.documentscanner/raw/main/fastlane/metadata/com.akylas.cardwallet/android/en-US/images/icon.png" alt="OSS Card Wallet"/>
+</a>
+<a target="_blank" href="https://github.com/Akylas/oss-weather">
+  <img src="https://github.com/Akylas/oss-weather/raw/main/fastlane/metadata/android/en-US/images/icon.png" alt="OSS Weather"/>
+</a>
+<a target="_blank" href="https://github.com/Akylas/alpimaps">
+  <img src="https://github.com/Akylas/alpimaps/raw/master/fastlane/metadata/android/en-US/images/icon.png" alt="AlpiMaps"/>
+</a>
+<a target="_blank" href="https://github.com/Akylas/conty">
+  <img src="https://github.com/Akylas/conty/raw/main/fastlane/metadata/android/en-US/images/icon.png" alt="Conty"/>
+</a>
+<a target="_blank" href="https://github.com/farfromrefug/OSS-Dict">
+  <img src="https://github.com/farfromrefug/OSS-Dict/raw/master/fastlane/metadata/android/en-US/images/icon.png" alt="OSS Dict"/>
+</a>
+<a target="_blank" href="https://github.com/farfromrefug/EnforceDoze">
+  <img src="https://github.com/farfromrefug/EnforceDoze/raw/master/fastlane/metadata/android/en-US/images/icon.png" alt="EnforceDoze"/>
+</a>
+<a target="_blank" href="https://github.com/NoWakeLock/NoWakeLock">
+  <img src="https://github.com/NoWakeLock/NoWakeLock/raw/dev/fastlane/metadata/android/en-US/images/icon.png" alt="NoWakeLock"/>
+</a>
+<a target="_blank" href="https://github.com/farfromrefug/koma">
+  <img src="https://github.com/farfromrefug/koma/raw/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" alt="NoWakeLock"/>
+</a>
+
+</div>
+
+<style scoped>
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+.projects img {
+  height: 100px;
+}
+</style>
+
+
 ### NativeScript Ecosystem
 
-I'm a major contributor to the NativeScript ecosystem, developing and maintaining numerous plugins and tools:
-
-#### Document Scanner
-**Repository**: [Akylas/OSS-DocumentScanner](https://github.com/Akylas/OSS-DocumentScanner)
-
-A powerful open-source document scanning application built with NativeScript. Features include:
-- Fast document edge detection
-- Image processing and enhancement
-- PDF generation
-- OCR capabilities
-- Cross-platform support (iOS & Android)
+I'm a major contributor to the [Nativescript](https://www.nativescript.org/) ecosystem, developing and maintaining numerous plugins and tools
 
 #### Other NativeScript Projects
 
@@ -25,6 +63,20 @@ I maintain and contribute to multiple NativeScript plugins for:
 - Native device APIs
 - Performance optimization tools
 - Developer utilities
+
+* [@nativescript-community/svelte-native](https://github.com/nativescript-community/svelte-native): Svelte Native Plugin
+* [@nativescript-community/ui-collectionview](https://github.com/nativescript-community/ui-collectionview): CollectionView Plugin
+* [@nativescript-community/ui-label](https://github.com/nativescript-community/ui-label): Full label replacement with a tons of options!
+* [@nativescript-community/ui-material-components](https://github.com/nativescript-community/ui-material-components): Big plugin to fully "materialize" your app!
+* [@nativescript-community/ui-image](https://github.com/nativescript-community/ui-image): Image Plugin 
+* [@nativescript-community/ui-chart](hhttps://github.com/nativescript-community/ui-chart): Chart Plugin
+* [@nativescript-community/ui-canvas](https://github.com/nativescript-community/ui-canvas): Canvas Plugin
+* [@nativescript-community/ui-carto](https://github.com/nativescript-community/ui-carto): Component for [Carto Mobile SDK](https://github.com/CartoDB/mobile-sdk)
+* [@nativescript-community/sentry](https://github.com/nativescript-community/sentry): Plugin for [Sentry](https://github.com/getsentry/sentry) support
+* [@nativescript-community/https](https://github.com/nativescript-community/https): Plugin to replace N http with a lot of features
+* [@nativescript-community/gesturehandler](https://github.com/nativescript-community/gesturehandler): Plugin better gesture handlers
+* [@nativescript-community/push](https://github.com/nativescript-community/push): Push Messages Plugin
+* [@nativescript-community//ui-barcodeview](https://github.com/nativescript-community/ui-barcodeview): Barcode View plugin
 
 ### Mobile Development Tools
 

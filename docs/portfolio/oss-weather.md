@@ -2,11 +2,11 @@
 import PortfolioPage from '../.vitepress/components/PortfolioPage.vue'
 </script>
 
-<PortfolioPage project-id="document-scanner" />
+<PortfolioPage project-id="oss-weather" />
 
 ## Technology Stack
 
-**Framework**: NativeScript with Svelte
+**Framework**: NativeScript with Svelte 
 **Languages**: TypeScript, JavaScript  
 **Image Processing**: OpenCV, custom algorithms  
 **OCR Engine**: Tesseract integration  
@@ -14,7 +14,8 @@ import PortfolioPage from '../.vitepress/components/PortfolioPage.vue'
 
 ## Key Features
 
-- 📸 **Fast Document Detection**: Automatic edge detection for quick document capture
+- 📸 **Fast Card Detection**: Automatic edge detection for quick card capture from camera
+- 🎨 **Pass Book support**: import, visualize, export your .pkpass
 - 🎨 **Image Enhancement**: Multiple filters and enhancement options
 - 📄 **PDF Generation**: Create multi-page PDFs from scanned documents
 - 🔍 **OCR Support**: Extract text from scanned documents
@@ -45,14 +46,14 @@ Contributions are welcome! Whether it's:
 - 📖 Documentation improvements
 - 🔧 Code contributions
 
-Check out the [Contributing Guidelines](https://github.com/Akylas/OSS-DocumentScanner/blob/master/CONTRIBUTING.md) to get started.
+Check out the [Contributing Guidelines](https://github.com/Akylas/oss-weather/blob/master/CONTRIBUTING.md) to get started.
 
 ## Support
 
 For questions, issues, or feature requests:
 
-- 📝 [Open an issue](https://github.com/Akylas/OSS-DocumentScanner/issues)
-- 💬 [Discussions](https://github.com/Akylas/OSS-DocumentScanner/discussions)
+- 📝 [Open an issue](https://github.com/Akylas/oss-weather/issues)
+- 💬 [Discussions](https://github.com/Akylas/oss-weather/discussions)
 - 📧 Contact via GitHub profile
 
 ---
@@ -60,7 +61,7 @@ For questions, issues, or feature requests:
 <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: var(--vp-c-bg-soft); border-radius: 12px;">
   <h3>⭐ Star This Project</h3>
   <p>If you find this project useful, please consider starring it on GitHub!</p>
-  <a href="https://github.com/Akylas/OSS-DocumentScanner" target="_blank" rel="noopener" class="vp-button brand medium">View on GitHub →</a>
+  <a href="https://github.com/Akylas/oss-weather" target="_blank" rel="noopener" class="vp-button brand medium">View on GitHub →</a>
 </div>
 
 <style scoped>

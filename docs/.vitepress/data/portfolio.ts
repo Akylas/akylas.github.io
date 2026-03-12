@@ -29,7 +29,7 @@ export const projects: PortfolioProject[] = [
   {
     id: 'document-scanner',
     title: 'OSS Document Scanner',
-    subtitle: 'Open Source Document Scanner',
+    subtitle: 'Scan all your documents',
     description: 'A powerful open-source document scanning application with OCR capabilities, edge detection, and PDF generation. Built with NativeScript for iOS and Android.',
     thumbnail: 'https://raw.githubusercontent.com/Akylas/OSS-DocumentScanner/main/fastlane/metadata/com.akylas.documentscanner/android/en-US/images/icon.png',
     images: [],
@@ -43,10 +43,100 @@ export const projects: PortfolioProject[] = [
       fastlanePath: 'fastlane/metadata/com.akylas.documentscanner/android/en-US'
     },
     stores: {
-      ios: 'https://apps.apple.com/app/oss-document-scanner/id1563961977',
+      ios: 'https://apps.apple.com/app/oss-document-scanner/id6472918564',
       android: 'https://play.google.com/store/apps/details?id=com.akylas.documentscanner',
       github: 'https://github.com/Akylas/OSS-DocumentScanner/releases',
       izzyondroid: 'https://apt.izzysoft.de/fdroid/index/apk/com.akylas.documentscanner'
+    }
+  },
+  {
+    id: 'card-wallet',
+    title: 'OSS Card Wallet',
+    subtitle: 'All your cards secured and without ad!',
+    description: 'A powerful open-source card wallet application with OCR capabilities, barcode detection, edge detection, and PDF generation. Built with NativeScript for iOS and Android.',
+    thumbnail: 'https://raw.githubusercontent.com/Akylas/OSS-DocumentScanner/main/fastlane/metadata/com.akylas.cardwallet/android/en-US/images/icon.png',
+    images: [],
+    date: 'Ongoing',
+    client: 'Open Source',
+    category: 'Open Source Development',
+    tags: ['NativeScript', 'OCR', 'Card Wallet', 'QRCode', 'PassBook', 'Open Source', 'iOS', 'Android'],
+    featured: true,
+    github: {
+      repo: 'Akylas/OSS-DocumentScanner',
+      fastlanePath: 'fastlane/metadata/com.akylas.cardwallet/android/en-US'
+    },
+    stores: {
+      ios: 'https://apps.apple.com/app/oss-document-scanner/id6504414362',
+      android: 'https://play.google.com/store/apps/details?id=com.akylas.cardwallet',
+      github: 'https://github.com/Akylas/OSS-DocumentScanner/releases',
+      izzyondroid: 'https://apt.izzysoft.de/fdroid/index/apk/com.akylas.cardwallet'
+    }
+  },
+  {
+    id: 'oss-weather',
+    title: 'OSS Weather',
+    subtitle: 'Get weather from OpenWeather, Open-Meteo or Meteo-France',
+    description: 'A powerful open-source card wallet application with OCR capabilities, barcode detection, edge detection, and PDF generation. Built with NativeScript for iOS and Android.',
+    thumbnail: 'https://raw.githubusercontent.com/Akylas/oss-weather/main/fastlane/metadata/android/en-US/images/icon.png',
+    images: [],
+    date: 'Ongoing',
+    client: 'Open Source',
+    category: 'Open Source Development',
+    tags: ['NativeScript', 'Weather', 'Open-Meteo', 'Open Source', 'iOS', 'Android'],
+    featured: true,
+    github: {
+      repo: 'Akylas/oss-weather',
+      fastlanePath: 'fastlane/metadata/android/en-US'
+    },
+    stores: {
+      ios: 'https://apps.apple.com/app/oss-weather/id1499117252',
+      android: 'https://play.google.com/store/apps/details?id=com.akylas.weather',
+      github: 'https://github.com/Akylas/oss-weather/releases',
+      izzyondroid: 'https://apt.izzysoft.de/fdroid/index/apk/com.akylas.weather'
+    }
+  },
+  {
+    id: 'alpimaps',
+    title: 'alpimaps',
+    subtitle: 'Mountain Navigation App',
+    description: 'Specialized mapping application for mountain sports and alpine activities.',
+    thumbnail: 'https://raw.githubusercontent.com/Akylas/alpimaps/master/fastlane/metadata/android/en-US/images/icon.png',
+    images: [],
+    date: 'Ongoing',
+    client: 'Open Source',
+    category: 'Open Source Development',
+    tags: ['NativeScript', 'Svelte', 'Map', 'GPS', 'Open Source', 'iOS', 'Android'],
+    github: {
+      repo: 'Akylas/alpimaps',
+      fastlanePath: 'fastlane/metadata/android/en-US'
+    },
+    stores: {
+      ios: 'https://apps.apple.com/app/alpi-maps/id1045609978',
+      android: 'https://play.google.com/store/apps/details?id=akylas.alpi.maps',
+      github: 'https://github.com/Akylas/alpimaps/releases',
+      izzyondroid: 'https://apt.izzysoft.de/fdroid/index/apk/akylas.alpi.maps'
+    }
+  },
+  {
+    id: 'conty',
+    title: 'conty',
+    subtitle: 'Mountain Navigation App',
+    description: 'Specialized mapping application for mountain sports and alpine activities.',
+    thumbnail: 'https://raw.githubusercontent.com/Akylas/conty/main/fastlane/metadata/android/en-US/images/icon.png',
+    images: [],
+    date: 'Ongoing',
+    client: 'Open Source',
+    category: 'Open Source Development',
+    tags: ['NativeScript', 'Svelte', 'Kids', 'Story', 'Open Source', 'iOS', 'Android'],
+    github: {
+      repo: 'Akylas/conty',
+      fastlanePath: 'fastlane/metadata/android/en-US'
+    },
+    stores: {
+      ios: 'https://apps.apple.com/app/conty/id6730123755',
+      android: 'https://play.google.com/store/apps/details?id=com.akylas.conty',
+      github: 'https://github.com/Akylas/alpimaps/releases',
+      izzyondroid: 'https://apt.izzysoft.de/fdroid/index/apk/com.akylas.conty'
     }
   },
   {
@@ -60,7 +150,6 @@ export const projects: PortfolioProject[] = [
     client: 'NativeScript',
     category: 'Application Development',
     tags: ['NativeScript', 'Mobile', 'Navigation', 'iOS', 'Android'],
-    featured: true
   },
   {
     id: 'activelook',
@@ -73,7 +162,6 @@ export const projects: PortfolioProject[] = [
     client: 'NativeScript',
     category: 'Application Development',
     tags: ['NativeScript', 'Mobile', 'IoT', 'Bluetooth', 'iOS', 'Android'],
-    featured: true
   },
   {
     id: 'oenoneo',
@@ -98,17 +186,5 @@ export const projects: PortfolioProject[] = [
     client: 'Titanium Mobile',
     category: 'Application Development',
     tags: ['Titanium Mobile', 'Mobile', 'Social', 'iOS', 'Android']
-  },
-  {
-    id: 'alpimaps',
-    title: 'Alpimaps',
-    subtitle: 'Mountain Navigation App',
-    description: 'Specialized mapping application for mountain sports and alpine activities.',
-    thumbnail: '/img/portfolio/alpimaps/DefaultIcon.png',
-    images: [],
-    date: 'Various',
-    client: 'NativeScript',
-    category: 'Application Development',
-    tags: ['NativeScript', 'Maps', 'Navigation', 'iOS', 'Android']
   }
 ]

@@ -39,12 +39,13 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/farfromrefug' }
+      { icon: 'github', link: 'https://github.com/farfromrefug' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/martinguillon/' }
     ],
 
     footer: {
       message: 'Building innovative mobile applications',
-      copyright: 'Copyright © 2024 Akylas'
+      copyright: 'Copyright © 2026 Akylas'
     }
   },
 
@@ -56,6 +57,6 @@ export default defineConfig({
 
   // Enable sitemap generation
   sitemap: {
-    hostname: 'https://akylas.github.io'
+    hostname: 'https://www.akylas.fr'
   }
 })
