@@ -48,7 +48,7 @@ defineProps<Props>()
       class="store-badge"
     >
       <img 
-        src="https://raw.githubusercontent.com/Akylas/OSS-DocumentScanner/main/badge_github.png" 
+        src="https://raw.githubusercontent.com/Akylas/OSS-DocumentScanner/main/graphics/badge_github.png" 
         alt="Get it on Github"
         class="app-store-badge"
       />
