@@ -24,7 +24,8 @@ export default defineConfig({
       { text: 'About', link: '/about' },
       { text: 'Portfolio', link: '/portfolio/' },
       { text: 'Open Source', link: '/opensource' },
-      { text: 'Contact', link: '/contact' }
+      { text: 'Contact', link: '/contact' },
+      { text: 'Privacy', link: '/privacy' }
     ],
 
     sidebar: {
@@ -57,6 +58,18 @@ export default defineConfig({
 
   // Enable sitemap generation
   sitemap: {
-    hostname: 'https://www.akylas.fr'
+    hostname: 'https://www.akylas.fr',
+    transformItems: (items) => {
+      // add new items or modify/filter existing items
+      items.push({
+        url: '/oss-weather',
+        priority: 0.8
+      })
+      items.push({
+        url: '/OSS-DocumentScanner',
+        priority: 0.8
+      })
+      return items
+    }
   }
 })

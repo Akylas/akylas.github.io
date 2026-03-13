@@ -1,0 +1,22 @@
+# Allow indexing of web pages
+User-agent: *
+Allow: /
+
+# Disallow direct access to files and assets
+Disallow: /*.json
+Disallow: /*.xml
+Disallow: /*.js
+Disallow: /*.css
+Disallow: /*.ico
+Disallow: /*.png
+Disallow: /*.jpg
+Disallow: /*.jpeg
+Disallow: /*.gif
+Disallow: /*.svg
+Disallow: /*.webp
+Disallow: /*.pdf
+Disallow: /*.zip
+Disallow: /*.apk
+
+# Sitemap location
+Sitemap: https://www.akylas.fr/sitemap.xml
