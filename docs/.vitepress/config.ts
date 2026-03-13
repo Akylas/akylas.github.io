@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { joinURL, withoutTrailingSlash } from 'ufo'
 
 export default defineConfig({
   title: 'Akylas',
@@ -9,7 +10,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#42C0ED' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:locale', content: 'en' }],
+    ['meta', { property: 'og:locale', content: 'fr' }],
     ['meta', { property: 'og:site_name', content: 'Akylas Portfolio' }],
   ],
 
@@ -71,5 +72,67 @@ export default defineConfig({
       })
       return items
     }
-  }
+  },
+  transformPageData: (pageData, { siteConfig }) => {
+    // Initialize the `head` frontmatter if it doesn't exist.
+    pageData.frontmatter.head ??= []
+
+    // Add basic meta tags to the frontmatter.
+    pageData.frontmatter.head.push(
+      [
+        'meta',
+        {
+          property: 'og:title',
+          content:
+            pageData.frontmatter.title || pageData.title || siteConfig.site.title,
+        },
+      ],
+      [
+        'meta',
+        {
+          name: 'twitter:title',
+          content:
+            pageData.frontmatter.title || pageData.title || siteConfig.site.title,
+        },
+      ],
+      [
+        'meta',
+        {
+          property: 'og:description',
+          content:
+            pageData.frontmatter.description || pageData.description || siteConfig.site.description,
+        },
+      ],
+      [
+        'meta',
+        {
+          name: 'twitter:description',
+          content:
+            pageData.frontmatter.description || pageData.description || siteConfig.site.description,
+        },
+      ],
+    )
+    // Create the canonical URL
+    pageData.frontmatter.head.push([
+      'link',
+      {
+        rel: 'canonical',
+        href: joinURL(
+          'https://garabit.barbapapazes.dev', // Modify this prior to deployment
+          withoutTrailingSlash(pageData.filePath.replace(/(index)?\.md$/, '')),
+        ),
+      },
+    ])
+
+    pageData.frontmatter.head.push([
+      'meta',
+      {
+        property: 'og:url',
+        content: joinURL(
+          'https://garabit.barbapapazes.dev', // Modify this prior to deployment
+          withoutTrailingSlash(pageData.filePath.replace(/(index)?\.md$/, '')),
+        ),
+      },
+    ])
+  },
 })
