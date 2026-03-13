@@ -25,7 +25,8 @@ export default defineConfig({
       { text: 'About', link: '/about' },
       { text: 'Portfolio', link: '/portfolio/' },
       { text: 'Open Source', link: '/opensource' },
-      { text: 'Contact', link: '/contact' }
+      { text: 'Contact', link: '/contact' },
+      { text: 'Privacy', link: '/privacy' }
     ],
 
     sidebar: {
